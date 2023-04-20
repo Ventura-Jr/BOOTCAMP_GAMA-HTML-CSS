@@ -1,0 +1,188 @@
+<!--estudo de html - tag de comentários-->
+<!DOCTYPE html>
+
+<!--conteiner de elementos-->
+<html lang="pt-br">
+
+<!--contem informações, tipo título, descrição, css... -->
+<head>
+
+    <title>Estudo do Ventura</title>
+    <meta charset="UTF-8" />
+    <meta name="descrição" content="Texto descrição da página" />
+    <meta name="Autor" content="Gama Academy" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style type="text/css">
+        body {
+            background-color: gold;
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="estilo1.css" />
+
+    <script type="text/javascript" src="scritp.js"></script>
+
+</head>
+
+<!--corpo da página-->
+<body>
+    <!--início do cabeçalho-->
+    <header role="banner">
+        <img width="560" height="315" src="Imagens/logo.png" alt="Logo da Empresa" title="Logo da Empresa" />
+        <nav role="navigation" aria-level="main navigation">
+            <ul>
+                <li>
+                    <a href="#" role="menuitem">Home</a>
+                </li>
+                <li>
+                    <a href="#" role="menuitem">Quem sou eu</a>
+                </li>
+                <li>
+                    <a href="#" role="menuitem">Conteúdo</a>
+                </li>
+                <li>
+                    <a href="#" role="menuitem">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--fim do cabeçalho-->
+    
+    <a href="https://venturajr.eng.br/" title="Site do Eng. Ventura Jr" target="_blank" id="bsite">Site do Ventura</p></a>
+    <button aria-label="Acesse o site do engenheiro Ventura para saber mais sobre engenharia" aria-labelledby="bsite">Saber mais.</button>
+
+    <!--Início listas-->
+    <!--lista desordenada-->
+    <ul type="circle">
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <!--lista ordenada-->
+    <ol start="3" type="A">
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ol>
+    <!--lista de definição-->
+    <dl>
+        <dt>Palavra 1</dt>
+        <dd>Explicação da palavra 1</dd>
+    </dl>
+    <!--Fim listas-->
+
+    <!--Início tag videos-->
+    <video width="560" height="315" controls>
+        <source src="Vídeos/profissoeslibras.mp4" type="video/mp4" />
+    </video>
+    <!--Fim tag videos-->
+
+    <!--Início de H1,H2,H3...-->
+    <h1>Abaixo temos o site do Eng. Ventura em construção.</h1>
+    <!--iframe serve para colcoar outro site dentro do nosso site.-->
+    <iframe src="https://venturajr.eng.br/" width="560" height="450">
+    </iframe>
+    <p>Conteúdo de <strong>apoio</strong></p>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Whpc1wh0Cig" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    <h2>Acima temos um vídeo incorporado direto do YT.</h2>
+    <p>conteúdo de <span>apoio</span></p>
+
+    <h3>Rio de Janeiro</h3>
+    <p>conteúdo de apoio</p>
+
+    <h4>Rio de Janeiro</h4>
+    <p>conteúdo de apoio</p>
+
+    <h5>Campo Grande</h5>
+    <p>conteúdo de apoio</p>
+    <!--Fim de H1,H2,H3...-->
+
+
+
+    <!--Início de criação de tabelas-->
+    <table summary="Os meses e nomes de atividades realizadas">
+        <caption>Tabela informativa sobre atividades</caption>
+        <thead>
+            <tr>
+                <th abbr="Mês" scope="col">Mês da atividade</th>
+                <th abbr="Nome" scope="col">Nome da atividade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th colspan="2" scope="row">Janeiro</th>
+            </tr>
+            <tr>
+                <th scope="row">Fevereiro</th>
+                <td rowspan="2">Meditação</td>
+            </tr>
+            <tr>
+                <td>Março</td>
+            </tr>
+            <tr>
+                <td>Abril</td>
+                <td>Natação</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total de atividades</td>
+                <td>2 atividades</td>
+            </tr>
+        </tfoot>
+    </table>
+    <!--Fim de criação de tabelas-->
+
+    <br/> <!--quebra de linha-->
+    
+    <tr>-----------------------------------</tr>
+
+    <!--Início de seções e divs-->
+    <section>
+        <!--Início de links-->
+        <a href="https://venturajr.eng.br/" title="Site do Eng. Ventura Jr" target="_blank">
+            Este é meu site, clique aqui para testar o link.
+        </a>
+        <p>
+            Estou estudando HTML 5, tentando <a href="https://google.com" title="aprender mais, pesquisando!">aprender
+                mais!</a>
+        </p>
+        <a href="Imagens/sultao.jpg" title="Foto de cachorro" alt="Sultão" target="_blank">
+            <img width="280" height="315" src="Imagens/sultao.jpg">
+        </a>
+        <!--Fim de links-->
+
+        <div class="bloco-post" id="div1">
+            <h3>Ak-47</h3>
+            <img width="280" height="157" src="Imagens/ak-bomba.png" alt="Ak-Bomba de Combustível" title="Ak-47" class="img-post"/>
+        </div>
+        <div class="bloco-post" id="div2">
+            <h3>Adagas</h3>
+            <img width="280" height="157" src="Imagens/adagas.png" alt="Adagas" title="Faca" class="img-post"/>
+        </div>
+        <div class="bloco-post" id="div3">
+            <h3>Usp-S</h3>
+            <a href="Imagens/usp-orion.png" title="USP-S ORION" target="_blank">
+            <img width="280" height="157" src="Imagens/usp-orion.png" alt="USP-s" title="Usp-s Orion" class="img-post"/>
+        </a>
+        </div>
+        <div class="bloco-post" id="div4">
+            <a href="Imagens/usp-traira.png" title="USP-S TRAIRA" target="_blank">
+            <img width="280" height="157" src="Imagens/usp-traira.png" alt="USP-s" title="Usp-s Traira" class="img-post"/>
+        </a>
+        </div>
+    </section>
+    <!--Fim de seções e divs-->
+
+    <tr>-------------------------------------------------</tr>
+
+    <footer role="contentinfo">
+        &copy;2023 Ventura Jr
+    </footer>
+
+</body>
+
+</html>

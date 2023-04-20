@@ -1,186 +1,85 @@
-<!--estudo de html - tag de comentários-->
 <!DOCTYPE html>
-
-<!--conteiner de elementos-->
 <html lang="pt-br">
-
-<!--contem informações, tipo título, descrição, css... -->
 <head>
-
-    <title>Estudo do Ventura</title>
-    <meta charset="UTF-8" />
-    <meta name="descrição" content="Texto descrição da página" />
-    <meta name="Autor" content="Gama Academy" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <style type="text/css">
-        body {
-            background-color: gold;
-        }
-    </style>
-
-    <link rel="stylesheet" type="text/css" href="estilo.css" />
-
-    <script type="text/javascript" src="scritp.js"></script>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+    crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Ventura Jr</title>
 </head>
-
-<!--corpo da página-->
 <body>
-    <!--início do cabeçalho-->
-    <header role="banner">
-        <img width="560" height="315" src="Imagens/logo.png" alt="Logo da Empresa" title="Logo da Empresa" />
-        <nav role="navigation" aria-level="main navigation">
-            <ul>
-                <li>
-                    <a href="#" role="menuitem">Home</a>
-                </li>
-                <li>
-                    <a href="#" role="menuitem">Quem sou eu</a>
-                </li>
-                <li>
-                    <a href="#" role="menuitem">Conteúdo</a>
-                </li>
-                <li>
-                    <a href="#" role="menuitem">Contato</a>
-                </li>
-            </ul>
-        </nav>
+    <header>
+        <div>
+            <img src="" alt="Logo Ventura Jr">
+        </div>
+        <ul>
+            <li>
+                <a target="_blank" href="https://github.com/Ventura-Jr">Github</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.instagram.com/eng.venturajr/">Instagram</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://wa.me/21981708752">Whatsapp</a>
+            </li>
+        </ul>
     </header>
-    <!--fim do cabeçalho-->
-    
-    <a href="https://venturajr.eng.br/" title="Site do Eng. Ventura Jr" target="_blank" id="bsite">Site do Ventura</p></a>
-    <button aria-label="Acesse o site do engenheiro Ventura para saber mais sobre engenharia" aria-labelledby="bsite">Saber mais.</button>
+    <main>
+        <sectio class="container">
+            <div class="name">
+                <h1>Ventura Jr</h1>
+                <h5>Front-End Developer student</h5>
+            </div>
 
-    <!--Início listas-->
-    <!--lista desordenada-->
-    <ul type="circle">
-        <li>Item 1</li>
-        <li>Item 2</li>
-    </ul>
-    <!--lista ordenada-->
-    <ol start="3" type="A">
-        <li>Item 1</li>
-        <li>Item 2</li>
-    </ol>
-    <!--lista de definição-->
-    <dl>
-        <dt>Palavra 1</dt>
-        <dd>Explicação da palavra 1</dd>
-    </dl>
-    <!--Fim listas-->
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fas fa-sort-down"></i>
+            </div>
 
-    <!--Início tag videos-->
-    <video width="560" height="315" controls>
-        <source src="Vídeos/profissoeslibras.mp4" type="video/mp4" />
-    </video>
-    <!--Fim tag videos-->
+            <div style="display: none;" id="about" display="none">
+                <p>
+                    Estudante de Tecnologia da Informação e Engenheiro. 
+                    Hábil, com perfil analítico e detalhista, sou organizado, 
+                    pontual e espontâneo, não tenho medo de aprender e estou em 
+                    constante evolução.
+                </p>
+                <p>
+                    Proativo e com boa comunicação, oferecendo conhecimentos 
+                    em ciências exatas, trabalho em equipe, capacidade de aliar 
+                    lógica e criatividade, compreensão da importância da 
+                    sustentabilidade e com aptidão em tecnologia. 
+                </p>
+                <p>
+                    Empreendedor energético, formador de equipes, capaz de navegar por situações 
+                    de alto estresse e atingir os objetivos pontualmente e abaixo 
+                    do orçamento.
+                </p>
+            </div>
+            <div class="form">
+                <div>
+                <p>deixe seu contato.</p>
+            </div>
+            <form action="">
+                    <input type="text" placeholder="seu melhor email :-)">
+                    <button>enviar!</button>
+                </form>
+            </div>
+        </sectio>
+    </main>
 
-    <!--Início de H1,H2,H3...-->
-    <h1>Abaixo temos o site do Eng. Ventura em construção.</h1>
-    <!--iframe serve para colcoar outro site dentro do nosso site.-->
-    <iframe src="https://venturajr.eng.br/" width="560" height="450">
-    </iframe>
-    <p>Conteúdo de <strong>apoio</strong></p>
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Whpc1wh0Cig" title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
-    <h2>Acima temos um vídeo incorporado direto do YT.</h2>
-    <p>conteúdo de <span>apoio</span></p>
-
-    <h3>Rio de Janeiro</h3>
-    <p>conteúdo de apoio</p>
-
-    <h4>Rio de Janeiro</h4>
-    <p>conteúdo de apoio</p>
-
-    <h5>Campo Grande</h5>
-    <p>conteúdo de apoio</p>
-    <!--Fim de H1,H2,H3...-->
-
-
-
-    <!--Início de criação de tabelas-->
-    <table summary="Os meses e nomes de atividades realizadas">
-        <caption>Tabela informativa sobre atividades</caption>
-        <thead>
-            <tr>
-                <th abbr="Mês" scope="col">Mês da atividade</th>
-                <th abbr="Nome" scope="col">Nome da atividade</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th colspan="2" scope="row">Janeiro</th>
-            </tr>
-            <tr>
-                <th scope="row">Fevereiro</th>
-                <td rowspan="2">Meditação</td>
-            </tr>
-            <tr>
-                <td>Março</td>
-            </tr>
-            <tr>
-                <td>Abril</td>
-                <td>Natação</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td>Total de atividades</td>
-                <td>2 atividades</td>
-            </tr>
-        </tfoot>
-    </table>
-    <!--Fim de criação de tabelas-->
-
-    <tr>-----------------------------------</tr>
-
-    <!--Início de seções e divs-->
-    <section>
-        <!--Início de links-->
-        <a href="https://venturajr.eng.br/" title="Site do Eng. Ventura Jr" target="_blank">
-            Este é meu site, clique aqui para testar o link.
-        </a>
-        <p>
-            Estou estudando HTML 5, tentando <a href="https://google.com" title="aprender mais, pesquisando!">aprender
-                mais!</a>
-        </p>
-        <a href="Imagens/sultao.jpg" title="Foto de cachorro" alt="Sultão" target="_blank">
-            <img width="280" height="315" src="Imagens/sultao.jpg">
-        </a>
-        <!--Fim de links-->
-
-        <div class="bloco-post" id="div1">
-            <h3>Ak-47</h3>
-            <img width="280" height="157" src="Imagens/ak-bomba.png" alt="Ak-Bomba de Combustível" title="Ak-47" class="img-post"/>
-        </div>
-        <div class="bloco-post" id="div2">
-            <h3>Adagas</h3>
-            <img width="280" height="157" src="Imagens/adagas.png" alt="Adagas" title="Faca" class="img-post"/>
-        </div>
-        <div class="bloco-post" id="div3">
-            <h3>Usp-S</h3>
-            <a href="Imagens/usp-orion.png" title="USP-S ORION" target="_blank">
-            <img width="280" height="157" src="Imagens/usp-orion.png" alt="USP-s" title="Usp-s Orion" class="img-post"/>
-        </a>
-        </div>
-        <div class="bloco-post" id="div4">
-            <a href="Imagens/usp-traira.png" title="USP-S TRAIRA" target="_blank">
-            <img width="280" height="157" src="Imagens/usp-traira.png" alt="USP-s" title="Usp-s Traira" class="img-post"/>
-        </a>
-        </div>
-    </section>
-    <!--Fim de seções e divs-->
-
-    <tr>-------------------------------------------------</tr>
-
-    <footer role="contentinfo">
-        &copy;2023 Ventura Jr
-    </footer>
+<script>
+    function displayAbout(){
+        var arrow = document.getElementById("animation");
+        arrow.classList.toggle("rotate");
+        var display = document.getElementById("about");
+        display.classList.toggle("active");
+    }
+</script>
 
 </body>
-
 </html>
